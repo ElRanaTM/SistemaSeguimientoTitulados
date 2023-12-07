@@ -1,0 +1,241 @@
+<?php
+
+return [
+    'verTitulado' => [
+        'type' => 2,
+        'description' => 'Ver Titulado',
+    ],
+    'editarTitulado' => [
+        'type' => 2,
+        'description' => 'Editar Titulado',
+    ],
+    'borrarTitulado' => [
+        'type' => 2,
+        'description' => 'Editar titulado',
+    ],
+    'editarEmail' => [
+        'type' => 2,
+        'description' => 'Editar Email',
+    ],
+    'editarPassword' => [
+        'type' => 2,
+        'description' => 'Editar Contraseña',
+    ],
+    'verExperiencias' => [
+        'type' => 2,
+        'description' => 'Ver Experiencias',
+    ],
+    'verExperiencia' => [
+        'type' => 2,
+        'description' => 'Ver Experiencia',
+    ],
+    'crearExperiencia' => [
+        'type' => 2,
+        'description' => 'Crear Experiencia',
+    ],
+    'editarExperiencia' => [
+        'type' => 2,
+        'description' => 'Editar Experiencia',
+    ],
+    'borrarExperiencia' => [
+        'type' => 2,
+        'description' => 'Borrar Experiencia',
+    ],
+    'verEstudios' => [
+        'type' => 2,
+        'description' => 'Ver Estudios',
+    ],
+    'verEstudio' => [
+        'type' => 2,
+        'description' => 'Ver Estudio',
+    ],
+    'crearEstudio' => [
+        'type' => 2,
+        'description' => 'Crear Estudio',
+    ],
+    'editarEstudio' => [
+        'type' => 2,
+        'description' => 'Editar Estudio',
+    ],
+    'borrarEstudio' => [
+        'type' => 2,
+        'description' => 'Borrar Estudio',
+    ],
+    'verAreasDesempenio' => [
+        'type' => 2,
+        'description' => 'Ver Áreas de Desempeño',
+    ],
+    'verAreaDesempenio' => [
+        'type' => 2,
+        'description' => 'Ver Área de Desempeño',
+    ],
+    'editarAreaDesempenio' => [
+        'type' => 2,
+        'description' => 'Editar Área de Desempeño',
+    ],
+    'borrarAreaDesempenio' => [
+        'type' => 2,
+        'description' => 'Borrar Área de Desempeño',
+    ],
+    'verComentarios' => [
+        'type' => 2,
+        'description' => 'Ver Comentarios',
+    ],
+    'crearComentario' => [
+        'type' => 2,
+        'description' => 'Crear Comentario',
+    ],
+    'borrarComentario' => [
+        'type' => 2,
+        'description' => 'Borrar Comentario',
+    ],
+    'verDashboard' => [
+        'type' => 2,
+        'description' => 'Ver Dashboard',
+    ],
+    'generarInforme' => [
+        'type' => 2,
+        'description' => 'Generar Informe',
+    ],
+    'descargarGraficos' => [
+        'type' => 2,
+        'description' => 'Descargar Gráficos',
+    ],
+    'verTitulados' => [
+        'type' => 2,
+        'description' => 'Ver Titulados',
+    ],
+    'verEncuestas' => [
+        'type' => 2,
+        'description' => 'Ver Encuestas',
+    ],
+    'verEncuesta' => [
+        'type' => 2,
+        'description' => 'Ver Encuesta',
+    ],
+    'crearEncuesta' => [
+        'type' => 2,
+        'description' => 'Crear Encuesta',
+    ],
+    'editarEncuesta' => [
+        'type' => 2,
+        'description' => 'Editar Encuesta',
+    ],
+    'borrarEncuesta' => [
+        'type' => 2,
+        'description' => 'Borrar Encuesta',
+    ],
+    'verUsuarios' => [
+        'type' => 2,
+        'description' => 'Ver Usuarios',
+    ],
+    'verUsuario' => [
+        'type' => 2,
+        'description' => 'Ver Usuario',
+    ],
+    'editarUsuario' => [
+        'type' => 2,
+        'description' => 'Editar Usuario',
+    ],
+    'borrarUsuario' => [
+        'type' => 2,
+        'description' => 'Borrar Usuario',
+    ],
+    'titulado' => [
+        'type' => 1,
+        'description' => 'Titulado',
+        'children' => [
+            'verTitulado',
+            'editarTitulado',
+            'verUsuario',
+            'editarEmail',
+            'editarPassword',
+            'verExperiencias',
+            'verExperiencia',
+            'crearExperiencia',
+            'editarExperiencia',
+            'borrarExperiencia',
+            'verEstudios',
+            'verEstudio',
+            'crearEstudio',
+            'editarEstudio',
+            'borrarEstudio',
+            'verAreasDesempenio',
+            'verAreaDesempenio',
+            'editarAreaDesempenio',
+            'borrarAreaDesempenio',
+            'verComentarios',
+            'crearComentario',
+            'borrarComentario',
+        ],
+    ],
+    'director' => [
+        'type' => 1,
+        'description' => 'Director',
+        'children' => [
+            'verDashboard',
+            'generarInforme',
+            'descargarGraficos',
+            'verTitulados',
+            'verTitulado',
+        ],
+    ],
+    'admin' => [
+        'type' => 1,
+        'description' => 'Admin',
+        'children' => [
+            'verDashboard',
+            'generarInforme',
+            'descargarGraficos',
+            'verTitulados',
+            'verTitulado',
+            'verEncuestas',
+            'verEncuesta',
+            'crearEncuesta',
+            'editarEncuesta',
+            'borrarEncuesta',
+            'director',
+        ],
+    ],
+    'SuperAdmin' => [
+        'type' => 1,
+        'description' => 'SuperAdmin',
+        'children' => [
+            'verUsuarios',
+            'verUsuario',
+            'editarUsuario',
+            'borrarUsuario',
+            'borrarTitulado',
+            'verDashboard',
+            'generarInforme',
+            'descargarGraficos',
+            'verTitulados',
+            'verTitulado',
+            'verEncuestas',
+            'verEncuesta',
+            'crearEncuesta',
+            'editarEncuesta',
+            'borrarEncuesta',
+            'editarTitulado',
+            'editarEmail',
+            'editarPassword',
+            'verExperiencias',
+            'verExperiencia',
+            'crearExperiencia',
+            'editarExperiencia',
+            'borrarExperiencia',
+            'verEstudios',
+            'verEstudio',
+            'crearEstudio',
+            'editarEstudio',
+            'borrarEstudio',
+            'verAreasDesempenio',
+            'verAreaDesempenio',
+            'editarAreaDesempenio',
+            'borrarAreaDesempenio',
+            'verComentarios',
+            'crearComentario',
+            'borrarComentario',
+        ],
+    ],
+];
